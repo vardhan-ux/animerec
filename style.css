@@ -208,6 +208,103 @@ h1, h2 {
 
 .site-footer a { color: var(--red-deep); }
 
+/* Detail page */
+.back-link {
+  color: var(--cream);
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+.back-link:hover { color: var(--red); }
+
+.detail-wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.detail-hero {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 8px;
+}
+
+.detail-poster {
+  width: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+  background: var(--border);
+  flex-shrink: 0;
+}
+
+.detail-info { display: flex; flex-direction: column; gap: 8px; }
+
+.detail-info h1 {
+  font-size: 1.6rem;
+  margin: 4px 0 0;
+}
+
+.detail-meta {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 0.9rem;
+}
+
+.detail-section {
+  margin-top: 28px;
+  border-top: 1px solid var(--border);
+  padding-top: 20px;
+}
+
+.synopsis { color: var(--ink); max-width: 700px; }
+
+.related-list { display: flex; flex-direction: column; gap: 8px; }
+
+.related-row {
+  display: flex;
+  gap: 12px;
+  font-size: 0.9rem;
+}
+
+.related-label {
+  min-width: 110px;
+  color: var(--gold);
+  font-weight: 500;
+}
+
+.related-row a { color: var(--red-deep); text-decoration: none; }
+.related-row a:hover { text-decoration: underline; }
+
+.external-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.ext-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--paper);
+}
+
+.ext-link.crunchyroll { background: #F47521; }
+.ext-link.imdb { background: #F5C518; color: var(--ink); }
+.ext-link.webtoon { background: #00D564; color: var(--ink); }
+.ext-link.tapas { background: var(--red); }
+
+.ext-link:hover { opacity: 0.85; }
+
+@media (max-width: 640px) {
+  .detail-hero { flex-direction: column; }
+  .detail-poster { width: 140px; }
+}
+
 @media (max-width: 640px) {
   .site-header { flex-direction: column; align-items: stretch; }
   .search-box { width: 100%; }
